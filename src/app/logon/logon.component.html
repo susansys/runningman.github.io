@@ -1,1 +1,64 @@
 
+
+<div class="container" [class.shim]="!isHidden">
+  <h1 class="title">Running Man</h1>
+  <form #logonForm="ngForm" class="logon-form">
+    <div class="form-group">
+      <label for="username">UserName</label>
+      <input type="text" class="form-control" id="username" 
+      [(ngModel)]="username" name="username" required placeholder="your username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" 
+      [(ngModel)]="password" name="password" required>
+    </div>
+
+    <button type="button" class="btn btn-primary" 
+    [disabled]="!logonForm.form.valid" 
+    (click)="newUser()" >Sign Up</button>
+
+  </form>
+
+  <div class="btn-container">
+      <button type="button" class="btn btn-success" 
+      [disabled]="!logonForm.form.valid" 
+      (click)="toGame()">Start</button>
+    
+      <button type="button" class="btn btn-info" (click)="showSetting()">Setting</button>
+  </div>
+</div>
+
+
+
+<div class="setting-div" [hidden]="isHidden">
+  <span class="glyphicon glyphicon-remove" (click)="showSetting()"></span>
+  <div class="setting-option">
+    <label style="width: 180px">Background Sound:</label>
+    <label>
+      <input #bgSoundOn type="radio" 
+      [(ngModel)]="bgSound" 
+      (ngModelChange)="chagebgSound(bgSoundOn.value)" name="bgSound" value="1" checked="checked"> on
+    </label>
+    <label>
+      <input #bgSoundOff type="radio" 
+      [(ngModel)]="bgSound" 
+      (ngModelChange)="chagebgSound(bgSoundOff.value)" name="bgSound" value="0"> off
+    </label>
+  </div>
+
+  <div class="setting-option">
+    <label style="width: 180px">Running Effect Sound:</label>
+    <label>
+      <input #efSoundOn type="radio" 
+      [(ngModel)]="efSound" 
+      (ngModelChange)="chageefSound(efSoundOn.value)" name="efSound" value="1" checked="checked"> on
+    </label>
+    <label>
+      <input #efSoundOff type="radio"
+      [(ngModel)]="efSound" 
+      (ngModelChange)="chageefSound(efSoundOff.value)" name="efSound" value="0"> off
+    </label>
+  </div>
+</div>
