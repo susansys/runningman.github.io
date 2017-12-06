@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="timeDiv">
+    <span class="timeSpan">
+        <label>TimeNow:</label>
+        <span>{{timeNow | timeFormat}}</span>
+    </span>
+    <span class="timeSpan">
+        <label>WorldRecord:</label>
+        <span>{{worldRecord | timeFormat}}</span>
+    </span>
+
+    <span class="timeSpan">
+        <label>YourBestRecord:</label>
+        <span>{{userBestRecord | timeFormat}}</span>
+    </span>
+  </div>
+  
+  <div class="box">
+    <div id="runMan" class="man" style="transform:translateX(0)" [ngClass]="runManSatus"></div>
+    <span class="tag tag20m">20m</span>
+    <span class="tag tag40m">40m</span>
+    <span class="tag tag60m">60m</span>
+    <span class="tag tag80m">80m</span>
+    <span class="tag tag100m">100m</span>
+    <span class="tag tag120m">120m</span>
+    <span class="tag tag150m">Destination</span>
+  </div>
+  
+  <div>
+    <button class="glyphicon glyphicon-arrow-left" (click)="move('left')"></button>
+    <button class="glyphicon glyphicon-arrow-right" (click)="move('right')"></button>
+  </div>
+</div>
+
