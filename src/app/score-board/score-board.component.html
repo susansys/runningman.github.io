@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="title">Your Record is {{userrecord | timeFormat}}</h1>
+
+  <span class="pic">
+
+  </span>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of records; let i=index">
+      <span class="Order"
+      [attr.data-username]="user.username"
+      [class.glod]="i === 0" 
+      [class.silver]="i === 1" 
+      [class.bronze]="i === 2"
+      *ngIf="i < 3"></span>
+      <span class="Order" *ngIf="i > 2">{{i + 1}}</span>
+      <span>{{user.record | timeFormat}}</span>
+    </li>
+  </ul>
+
+  <div>
+    <button class="btn btn-Primary" (click)="toGame()">New Start!</button>
+  </div>
+</div>
