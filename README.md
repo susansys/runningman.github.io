@@ -8,12 +8,12 @@
 
 <h3> Team members </h3>
 
-<p2>Yishu Sun sun447@purdue.edu   </p2>
+Yishu Sun sun447@purdue.edu  
 
-<p3>Yueting Li li2236@purdue.edu  </p3>
+Yueting Li li2236@purdue.edu 
 
-<p4>David Chen chen2124@purdue.edu  </p4>
+David Chen chen2124@purdue.edu 
 
 <h3> Technology and service </h3>
 
-<p5> Express, Node.js, JSON, Jade, JavaScript, AngularJS, HTML, CSS </p5>
+Express, Node.js, JSON, Jade, JavaScript, AngularJS, HTML, CSS 
