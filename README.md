@@ -16,4 +16,4 @@ David Chen chen2124@purdue.edu
 
 <h3> Technology and service </h3>
 
-Express, Node.js, JSON, Jade, JavaScript, AngularJS, HTML, CSS 
+Express, Node.js, JSON, Jade, JavaScript, AngularJS, HTML, CSS (also use Karma to test)
