@@ -8,11 +8,11 @@
 
 <h3> Team members </h3>
 
-Yishu Sun sun447@purdue.edu  
+Yishu Sun sun447@purdue.edu\n
 
-Yueting Li li2236@purdue.edu 
+Yueting Li li2236@purdue.edu\n
 
-David Chen chen2124@purdue.edu 
+David Chen chen2124@purdue.edu\n
 
 <h3> Technology and service </h3>
 
