@@ -16,4 +16,4 @@ David Chen chen2124@purdue.edu
 
 <h3> Technology and service </h3>
 
-MERN (MongoDB, Express, React, Node.js) Jade, JavaScript, TypeScript, AngularJS, HTML, CSS (also use Karma to test)
+MERN (MongoDB, Express, React, Node.js), JavaScript, TypeScript, AngularJS, HTML, CSS
