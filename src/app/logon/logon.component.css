@@ -1,7 +1,7 @@
 .container {
   width: 640px;
   height: 480px;
-  /* background-image: url('/src/assets/image/speedway.png'); */
+  background-image: url('/src/assets/image/speedway.png');
 }
 
 .container.shim::after {
