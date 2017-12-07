@@ -1,4 +1,4 @@
 
-  <header1> Running Man </header1>
+  <h1> Running Man </h1>
   
-  <header2> webgame </header2>
+  <h2> webgame </h2>
